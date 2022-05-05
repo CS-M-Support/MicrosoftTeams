@@ -1,7 +1,8 @@
-# Mit MS Teams Verbinden
-Connect-MicrosoftTeams -Credential $O365cred
-$session = New-CsOnlineSession -Credential $O365cred
-Import-PsSession $session
+# Verbindung mit Microsoft Teams herstellen
+Connect-MicrosoftTeams
 
 # Anpassung der Upgrade Policy
 Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Global
+
+# Verbindung mit Microsoft Teams trennen
+Disconnect-MicrosoftTeams

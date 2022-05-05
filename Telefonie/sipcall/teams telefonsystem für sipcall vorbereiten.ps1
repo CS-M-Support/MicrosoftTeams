@@ -20,3 +20,6 @@ New-CsOnlineVoiceRoutingPolicy “sipcall” -OnlinePstnUsages “sipcall”
 
 # Dem User die Berechtigung für die Richtlinie erteilen
 Grant-CsOnlineVoiceRoutingPolicy -Identity “[UserPrincipalName]” -PolicyName “sipcall”
+
+# Verbindung mit Microsoft Teams trennen
+Disconnect-MicrosoftTeams

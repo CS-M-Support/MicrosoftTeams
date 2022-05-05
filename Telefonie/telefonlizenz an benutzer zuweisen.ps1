@@ -1,7 +1,4 @@
-# MSOnline Modul installieren
-Install-Module MSOnline
-
-# Mit Microsoft 365 Tenant verbinden
+# Verbindung mit Microsoft 365 Tenant herstellen
 Connect-MsolService
 
 # Licence Account SkuId abrufen
@@ -12,3 +9,6 @@ Set-MsolUserLicense -UserPrincipalName "[UPN]" -AddLicenses "[TenantName]:BUSINE
 
 # Teams Telefonie Lizenz (virtueller User) zuweisen
 Set-MsolUserLicense -UserPrincipalName "[UPN]" -AddLicenses "[TenantName]:PHONESYSTEM_VIRTUALUSER"
+
+# Verbindung mit Microsoft 365 Tenant trennen
+Disconnect-MsolService
