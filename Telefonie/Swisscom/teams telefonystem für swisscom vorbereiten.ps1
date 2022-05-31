@@ -1,4 +1,4 @@
-# Verbindung mit Microsoft Teams herstellen
+# Verbindung mit MicrosoftTeams herstellen
 Connect-MicrosoftTeams
 
 Set-CsOnlinePstnUsage -Identity Global -Usage @{Add="SwisscomET4T"}
@@ -9,5 +9,5 @@ New-CsOnlineVoiceRoutingPolicy "SwisscomET4T" -OnlinePstnUsages "SwisscomET4T"
 
 Grant-CsOnlineVoiceRoutingPolicy -Identity [UserPrincipalName] -PolicyName "SwisscomET4T"
 
-# Verbindung mit Microsoft Teams trennen
+# Verbindung mit MicrosoftTeams trennen
 Disconnect-MicrosoftTeams

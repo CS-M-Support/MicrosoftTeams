@@ -1,4 +1,4 @@
-# Verbindung mit Microsoft Teams herstellen
+# Verbindung mit MicrosoftTeams herstellen
 Connect-MicrosoftTeams
 
 # Aktivieren der Domäne für die Verwendung von Telefonie (Bei sipcall der User "domainactivation")
@@ -21,5 +21,5 @@ New-CsOnlineVoiceRoutingPolicy “sipcall” -OnlinePstnUsages “sipcall”
 # Dem User die Berechtigung für die Richtlinie erteilen
 Grant-CsOnlineVoiceRoutingPolicy -Identity “[UserPrincipalName]” -PolicyName “sipcall”
 
-# Verbindung mit Microsoft Teams trennen
+# Verbindung mit MicrosoftTeams trennen
 Disconnect-MicrosoftTeams

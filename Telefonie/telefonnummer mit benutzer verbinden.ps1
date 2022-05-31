@@ -1,4 +1,4 @@
-﻿# Verbindung mit Microsoft Teams herstellen
+﻿# Verbindung mit MicrosoftTeams herstellen
 Connect-MicrosoftTeams
 
 # Telefonnummer mit Ressource verknüpfen
@@ -10,5 +10,5 @@ Set-CsUser -identity “[UserPrincipalName]” -EnterpriseVoiceEnabled $true -Ho
 # Richtlinie auf Teams Only setzen
 Grant-CsTeamsUpgradePolicy -Identity [UserPrincipalName] -PolicyName UpgradeToTeams
 
-# Verbindung mit Microsoft Teams trennen
+# Verbindung mit MicrosoftTeams trennen
 Disconnect-MicrosoftTeams

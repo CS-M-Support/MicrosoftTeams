@@ -1,8 +1,8 @@
-# Verbindung mit Microsoft Teams herstellen
+# Verbindung mit MicrosoftTeams herstellen
 Connect-MicrosoftTeams
 
 # Anpassung der Upgrade Policy
 Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Global
 
-# Verbindung mit Microsoft Teams trennen
+# Verbindung mit MicrosoftTeams trennen
 Disconnect-MicrosoftTeams
